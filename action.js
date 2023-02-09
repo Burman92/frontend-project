@@ -27,5 +27,11 @@ $.get("https://icanhazdadjoke.com/", function(data){
 //creating a function for the button that will clear
 // all the dad jokes that have been randomly created
 $("#clear").click(function(){
-    unorderedList.empty()
+    let answer = confirm("Click OK if you're sure you want to clear out this list.")
+    if(!answer){
+        alert("Nice, well lets add some more jokes to the list.")
+    } else {
+        alert("Wow, You're making your old man shed a tear.")
+        unorderedList.empty()
+    }
 })
