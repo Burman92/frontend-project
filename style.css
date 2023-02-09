@@ -1,3 +1,64 @@
-li{
-    font-weight: bold;
+body, html{
+    height: 100%;
+    background-image: url("https://pbs.twimg.com/media/Egjby3xWsAAlPAh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
+@keyframes test {
+    from{background-color: rgb(166, 138, 10);}
+    to{background-color: rgb(255, 255, 255);}
+}
+
+#header{
+    text-align: center;
+    border: solid;
+    font-size: 70px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    margin: auto;
+    height: 70px;
+    /* background: rgb(166, 138, 10); */
+    background-color: rgb(166, 138, 10);
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    opacity: 60%;
+}
+
+
+#user-section{
+    background-color: rgb(255, 240, 170);
+    opacity: 60%;
+    text-align: center;
+    word-spacing: 250px;
+    border: solid rgb(194, 187, 101);
+}
+
+.bag-of-jokes{
+    background-color: hsl(51, 100%, 50%);
+    opacity: 60%;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: solid;
+}
+.bag-of-jokes::before{
+    content: "";
+    position: absolute;
+    left: 14px;
+    bottom: -14px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 56px solid gold;
+    border-bottom: 23px solid transparent;
+}
+
