@@ -3,10 +3,11 @@ body, html{
     background-image: url("https://pbs.twimg.com/media/Egjby3xWsAAlPAh.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
-@keyframes test {
+@keyframes transition {
     from{background-color: rgb(166, 138, 10);}
     to{background-color: rgb(255, 255, 255);}
 }
@@ -19,10 +20,9 @@ body, html{
     word-spacing: 10px;
     margin: auto;
     height: 70px;
-    /* background: rgb(166, 138, 10); */
     background-color: rgb(166, 138, 10);
-    animation-name: test;
-    animation-duration: 3s;
+    animation-name: transition;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
     opacity: 60%;
@@ -61,4 +61,8 @@ body, html{
     border-right: 56px solid gold;
     border-bottom: 23px solid transparent;
 }
-
+/* when you hover a listed joke it will turn the background to the desired color */
+li:hover{
+    background-color: red;
+    cursor: pointer;
+}
